@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
  int a=2;
- string bs="niharika";
- cout<<a+b;
+ string s="niharika";
+ cout<<a+s;
  return 0;
 }
