@@ -1,14 +1,7 @@
 #include<iostream>
 using namespace std;
 
- class A {
-      
-      public:
-      void display(){
-          cout<<"This the display function of the base class A\n";
-      }
 
- };
 
  class B : public A{
 
@@ -33,8 +26,7 @@ using namespace std;
       public:
       void display3(){
        
-         // A::display(); /* not working because of diamond problem showing display function id ambiguous */
-          //cout<<endl;
+
        
           B::display1();
           cout<<endl;
