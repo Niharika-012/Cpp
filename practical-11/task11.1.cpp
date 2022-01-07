@@ -32,37 +32,28 @@ using namespace std;
 
       public:
       void display3(){
+       
+         // A::display(); /* not working because of diamond problem showing display function id ambiguous */
+          //cout<<endl;
+       
+          B::display1();
+          cout<<endl;
+       
+          C::display2();
+          cout<<endl;
+       
           cout<<"This the display1 function of the child class D\n";
       }
 
  };
 
-
- int main()
- {
-    B obj1;
-    C obj2;
-    D obj3;
-
-    cout<<endl;
-
-    obj1.display();
-    cout<<endl;
-
-    obj2.display();
-    cout<<endl;
-    
-    obj3.display1();
-    obj3.display2();
-    cout<<endl;
-
-    //obj3.display(); 
-    
-    /* while callin base class  A display function using child class D object 
-    is creating a diamond problem   Error :  request for member display is ambiguous*/
-                    
-
+int main()
+{
  
-
-
- }
+ D obj;
+ 
+ obj.display3();
+  
+  return 0; 
+ 
+}
