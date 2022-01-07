@@ -6,7 +6,7 @@ using namespace std;
 
       public:
       void display1(){
-          cout<<"This the display1 function of the child class B\n";
+          cout<<"This the display1 function of the Base class A\n";
       }
 
  };
@@ -19,7 +19,7 @@ using namespace std;
          A :: display1();
         cout<<endl;
 
-        cout<<"This the display2 function of the child class C\n";
+        cout<<"This the display2 function of the child class B\n";
       }
 
  };
