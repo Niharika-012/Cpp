@@ -6,31 +6,27 @@ using namespace std;
 class A{
     public:
 
-    int add(int x){
+    int add(int x , int y){
         cout<<"Parent Int function "<<endl;
-        return(x+1);
+        return(x+y);
     }
 
-    float add( float y){
+    float add(int a , float b){
         cout<<"Parent Float function "<<endl;
 
-        return(y+0.5);
+        return(a+b);
     }
 };
 
 class B : public A{
     public:
 
-    int add(int x){
+    int add(int x , int y){
         cout<<"Child Int function "<<endl;
-        return(x+2);
+        return(x+y+1);
     }
 
-    float add( float y){
-        cout<<"Child Float function "<<endl;
-
-        return(y+0.2);
-    }
+ 
 };
 
 int main(){
@@ -38,17 +34,16 @@ int main(){
   A e1;
   B e2;
 
-  cout<<e1.add(2)<<endl;
+  cout<<e1.add(2,1)<<endl;
   cout<<endl;
 
-  cout<<e1.add(2.1f)<<endl;
+  cout<<e1.add(4 , 5.90f )<<endl;
   cout<<endl;
 
-  cout<<e2.add(2)<<endl;
+  cout<<e2.add(2 , 2)<<endl;
   cout<<endl;
 
-  cout<<e2.add(3.2f)<<endl;
-  cout<<endl;
+ 
 
   return 0;
 
