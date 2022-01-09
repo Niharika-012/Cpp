@@ -51,3 +51,4 @@ int main(){
 
 // if a derived class redefines the base class member method then all the base
 // class methods with the same name become hidden in the derived class. 
+//method which is hidden from child from child class object is “ int add(int x , int y)”.
